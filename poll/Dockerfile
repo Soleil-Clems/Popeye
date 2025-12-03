@@ -10,4 +10,4 @@ RUN pip3 install --upgrade pip && \
     
 EXPOSE 80
 
-CMD ["python3", "app.py"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=80"]

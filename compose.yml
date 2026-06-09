@@ -55,7 +55,7 @@ services:
       - "6379:6379"
 
   db:
-    image: postgres:alpine
+    image: postgres:16
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}

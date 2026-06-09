@@ -46,7 +46,7 @@ services:
     restart: always
 
   redis:
-    image: redis:alpine
+    image: redis:5.0
     networks:
       - poll-tier
       - back-tier

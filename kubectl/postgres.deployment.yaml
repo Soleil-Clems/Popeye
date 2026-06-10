@@ -5,7 +5,7 @@ metadata:
   labels:
     app: db
 spec:
-  replicas: 1
+  replicas: 0
   selector:
     matchLabels:
       app: db
@@ -14,6 +14,7 @@ spec:
       labels:
         app: db
     spec:
+      restartPolicy: Always
       containers:
         - name: postgres
           image: postgres:15

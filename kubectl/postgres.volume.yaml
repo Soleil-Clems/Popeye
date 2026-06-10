@@ -7,7 +7,7 @@ spec:
     storage: 2Gi
   volumeMode: Filesystem
   hostPath:
-    path: /data/postgres
+    path: var/lib/postgresql/data
   accessModes:
     - ReadWriteOnce
 

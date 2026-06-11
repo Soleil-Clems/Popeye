@@ -22,7 +22,6 @@ spec:
           args:
             - --providers.kubernetesingress
             - --entrypoints.web.address=:80
-            - --entrypoints.dashboard.address=:8080
             - --api.dashboard=true
             - --api.insecure=true
           ports:
